@@ -1,0 +1,21 @@
+.logo {
+  width: 92px;
+  height: 69px; }
+
+.header__list {
+  list-style: none; }
+
+.header__list-item {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: inline;
+  margin-right: 35px; }
+
+.header__list-item:last-child {
+  margin-right: 0; }
+
+.header__link {
+  text-decoration: none; }
