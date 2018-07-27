@@ -1,8 +1,12 @@
+/* normalize */
+@import url('normalize.css');
+
 /* variables, mixins */
-@import url("./utils/variables.scss");
+@import url('/css/utils/variables.css');
+
 /* layout setups */
-@import url("./base/normalize.css");
-@import url("./base/fonts.css");
-@import url("./base/base.css");
+@import url('/css/base/fonts.css');
+@import url('/css/base/base.css');
+
 /* sections */
-@import url("./sections/intro.css");
+@import url('/css/sections/intro.css');

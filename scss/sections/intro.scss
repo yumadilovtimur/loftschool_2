@@ -1,9 +1,23 @@
+.intro {
+  
+}
+
+.header {
+
+}
+
 .logo {
   width: 92px;
-  height: 69px; }
+  height: 69px;
+}
+
+.header__nav {
+
+}
 
 .header__list {
-  list-style: none; }
+  list-style: none;
+}
 
 .header__list-item {
   font-family: "Ubuntu", sans-serif;
@@ -12,9 +26,13 @@
   line-height: 30px;
   text-transform: uppercase;
   display: inline;
-  margin-right: 35px; }
-  .header__list-item:last-child {
-    margin-right: 0; }
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 .header__link {
-  text-decoration: none; }
+  text-decoration: none;
+  // color: #ffffff;
+}
