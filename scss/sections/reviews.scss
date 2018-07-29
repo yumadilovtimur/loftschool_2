@@ -1,0 +1,125 @@
+.reviews {
+  min-height: 100vh;
+  background-color: #2f3234;
+}
+
+.reviews-container {
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 650px;
+  width: 100%;
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  flex-basis: 25%;
+  height: 50vh;
+  position: relative;
+  flex-grow: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:nth-child(1) {
+    background-image: url("/images/authors/author-1.png");
+  }
+
+  &:nth-child(2) {
+    background-image: url("/images/authors/author-2.png");
+  }
+
+  &:nth-child(3) {
+    background-image: url("/images/authors/author-3.png");
+  }
+
+  &:nth-child(4) {
+    background-image: url("/images/authors/author-4.png");
+  }
+
+  &:nth-child(5) {
+    background-image: url("/images/authors/author-5.png");
+  }
+
+  &:nth-child(6) {
+    background-image: url("/images/authors/author-6.png");
+  }
+
+  &:nth-child(7) {
+    background-image: url("/images/authors/author-7.png");
+  }
+
+  &:nth-child(8) {
+    background-image: url("/images/authors/author-8.png");
+  }
+}
+
+.reviews__avatar {
+  display: block;
+  width: 100%;
+}
+
+.reviews__preview {
+  opacity: 0;
+  z-index: 10;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.reviews__item:hover>.reviews__preview {
+  opacity: 1;
+}
+
+.reviews__autor-name {
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.reviews__info {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.buy-button--more {
+  background-color: #2f3234;
+
+  &:hover {
+    background-color: #1f2122;
+  }
+}

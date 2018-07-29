@@ -1,0 +1,15 @@
+/* normalize */
+@import "../css/normalize.css";
+
+/* variables, mixins */
+@import "../scss/utils/variables.scss";
+
+/* layout setups */
+@import "../scss/base/base.scss";
+@import "../scss/base/fonts.scss";
+
+/* sections */
+@import "../scss/sections/intro.scss";
+@import "../scss/sections/features.scss";
+@import "../scss/sections/reviews.scss";
+@import "../scss/sections/buy.scss";

@@ -1,9 +1,24 @@
 .intro {
-  
+  background-image: url("/images/intro-bg.png");
+}
+
+.intro-container {
+  max-width: 940px;
+  padding: 0 80px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-
+  position: relative;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -11,28 +26,117 @@
   height: 69px;
 }
 
-.header__nav {
+.logo--intro {
+  margin-right: 15px;
+}
 
+.header__nav {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
 .header__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: right;
 }
 
 .header__list-item {
-  font-family: "Ubuntu", sans-serif;
   font-size: 13px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 13px;
   text-transform: uppercase;
-  display: inline;
-  margin-right: 35px;
-  &:last-child {
-    margin-right: 0;
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    right: -2px;
+    bottom: 9px;
+  }
+  &:last-child::after {
+    display: none;
   }
 }
 
 .header__link {
+  display: inline-block;
   text-decoration: none;
-  // color: #ffffff;
+  color: #ffffff;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.intro__visual {
+  display: flex;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.intro__picture {
+  width: 451px;
+  height: 424px;
+  margin-right: 10px;
+}
+
+.intro__title {
+  color: #f9b43b;
+  font-family: "Gagalin", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 85px;
+  margin: 0;
+  margin-top: 130px;
+}
+
+.intro__title--lettering {
+  display: block;
+  font-size: 65px;
+  color: #ffffff;
+  line-height: 85px;
+  font-family: "Lifehack";
+  font-weight: 500;
+}
+
+.intro__control-down {
+  font-size: 0px;
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 95px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+    bottom: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+    left: 13px;
+    bottom: 5px;
+  }
 }

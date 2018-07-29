@@ -22,40 +22,235 @@
 
 <body>
 
-  <section class="intro" id="intro">
-    <header class="header">
-      <img class="logo" src="/images/icons/logo.svg" alt="Логотип компании MyBurger">
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a class="header__link" href="#features">О нас</a>
+  <div class="wrapper">
+
+    <section class="section  intro" id="intro">
+      <div class="intro-container">
+        <header class="header">
+          <img class="logo  logo--intro" src="/images/icons/logo.svg" alt="Логотип компании MyBurger">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="#features">О нас</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#burgers">Бургеры</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#team">Команда</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#menu">Меню</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#job">Как мы работаем</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="buy-button" href="#buy">Заказать</a>
+        </header>
+        <figure class="intro__visual">
+          <img class="intro__picture" src="/images/visual_capture.png" alt="Бургер из меню ресторана MyBurger">
+          <figcaption class="intro__description">
+            <h1 class="intro__title">Мы делаем
+              <span class="intro__title--lettering">натуральные бургеры</span>
+            </h1>
+          </figcaption>
+        </figure>
+        <a class="intro__control-down" href="#features"></a>
+      </div>
+    </section>
+
+    <section class="section  features" id="features">
+      <div class="features-container">
+        <h2 class="features__title">Мы лучшие</h2>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <b class="features__description">100% свежее мясо</b>
+            <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
           </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#burgers">Бургеры</a>
+          <li class="features__list-item">
+            <b class="features__description">Ручная сборка</b>
+            <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает
+              сюжетный реформаторский пафос.</p>
           </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#team">Команда</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#menu">Меню</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#job">Как мы работаем</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#contacts">Контакты</a>
+          <li class="features__list-item">
+            <b class="features__description">Натуральные игридиенты</b>
+            <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
           </li>
         </ul>
-      </nav>
-      <a class="buy-button" href="#buy">Заказать</a>
-    </header>
+      </div>
+    </section>
+
+    <section class="section  reviews" id="reviews">
+      <div class="reviews-container">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__preview">
+              <b class="reviews__autor-name">Константин Спилберг</b>
+              <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+              <button class="buy-button  buy-button--more">Подробнее</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section  buy" id="buy">
+      <div class="buy-container">
+        <h2 class="buy__title">Закажите доставку</h2>
+        <form class="buy__forms" action="https://example.com" method="POST">
+          <div class="buy__left-forms">
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <label class="buy__label" for="name">
+                  Имя
+                </label>
+                <input id="name" class="buy__input" type="text" name="name" required>
+              </div>
+              <div class="buy__form-element">
+                <label class="buy__label" for="telephone">
+                  Телефон
+                </label>
+                <input class="buy__input" id="telephone" type="tel" name="telephone" required>
+              </div>
+            </div>
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <label class="buy__label" for="street">
+                  Улица
+                </label>
+                <input class="buy__input" id="street" type="text" name="street" required>
+              </div>
+            </div>
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <label class="buy__label" for="building">
+                  Дом
+                </label>
+                <input class="buy__input" id="building" type="number" name="building" required>
+              </div>
+              <div class="buy__form-element">
+                <label class="buy__label" for="housing">
+                  Корпус
+                </label>
+                <input class="buy__input" id="housing" type="number" name="housing">
+              </div>
+              <div class="buy__form-element">
+                <label class="buy__label" for="apartament">
+                  Квартира
+                </label>
+                <input class="buy__input" id="apartament" type="number" name="apartament" required>
+              </div>
+              <div class="buy__form-element">
+                <label class="buy__label" for="level">
+                  Этаж
+                </label>
+                <input class="buy__input" id="level" type="number" name="level" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy__right-forms">
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <label class="buy__label" for="comment">
+                  Комментарий
+                </label>
+                <textarea class="buy__input  buy__input--textarea" id="comment" name="comment"></textarea>
+              </div>
+            </div>
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <input class="buy__radio" id="buy-money" type="radio" name="money-or-card" value="money">
+                <label class="buy__label-radio" for="buy-money">Потребуется сдача</label>
+                <input class="buy__radio" id="buy-cart" type="radio" name="money-or-card" value="card" checked>
+                <label class="buy__label-radio" for="buy-cart">Оплата по карте</label>
+              </div>
+            </div>
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <input class="buy__checkbox" id="recall" type="checkbox" name="recall" value="call-me">
+                <label class="buy__label-checkbox" for="recall">Не перезванивать</label>
+              </div>
+            </div>
+            <div class="buy__form-line">
+              <div class="buy__form-element">
+                <button class="buy-button  buy-button--margin-right" type="submit">Заказать</button>
+                <button class="buy__reset" type="reset">Очистить</button>
+              </div>
+            </div>
+        </form>
+        </div>
+    </section>
+
     <nav class="anchor-pagintaion">
       <ul class="anchor-pagintaion__list">
         <li class="anchor-pagintaion__list-item">
-          <a class="anchor-pagintaion__link" href="#intro"></a>
+          <a class="anchor-pagintaion__link  anchor-pagintaion__link--active" href="#intro"></a>
         </li>
         <li class="anchor-pagintaion__list-item">
           <a class="anchor-pagintaion__link" href="#features"></a>
@@ -76,20 +271,15 @@
           <a class="anchor-pagintaion__link" href="#job"></a>
         </li>
         <li class="anchor-pagintaion__list-item">
+          <a class="anchor-pagintaion__link" href="#buy"></a>
+        </li>
+        <li class="anchor-pagintaion__list-item">
           <a class="anchor-pagintaion__link" href="#contacts"></a>
         </li>
       </ul>
     </nav>
-    <figure class="intro__visual">
-      <img class="intro__picture" src="" alt="Бургер из меню ресторана MyBurger">
-      <figcaption class="intro__description">
-        <h1 class="intro__title">Мы делаем <span class="intro__title--lettering">натуральные бургеры</span></h1>
-      </figcaption>
-    </figure>
-    <a class="intro__control-down" href="#features"></a>
-  </section>
 
-
+    </div>
 
 </body>
 
