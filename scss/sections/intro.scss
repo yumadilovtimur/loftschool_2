@@ -2,16 +2,9 @@
   background-image: url("/images/intro-bg.png");
 }
 
-.intro-container {
-  max-width: 940px;
-  padding: 0 80px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container--intro {
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .header {
@@ -19,11 +12,7 @@
   padding-top: 12px;
   display: flex;
   align-items: center;
-}
-
-.logo {
-  width: 92px;
-  height: 69px;
+  width: 100%;
 }
 
 .logo--intro {
@@ -45,6 +34,10 @@
   margin: 0;
   font-size: 0;
   text-align: right;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .header__list-item {
@@ -81,13 +74,23 @@
 .intro__visual {
   display: flex;
   margin: 0;
-  flex-grow: 1;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
 }
 
 .intro__picture {
   width: 451px;
   height: 424px;
   margin-right: 10px;
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .intro__title {
@@ -98,6 +101,11 @@
   line-height: 85px;
   margin: 0;
   margin-top: 130px;
+
+  @include tablets {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .intro__title--lettering {
@@ -116,27 +124,18 @@
   height: 20px;
   position: relative;
   margin: 0 auto;
-  margin-top: 95px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 2px;
-    transform: rotate(45deg);
-    background-color: #ffffff;
-    bottom: 5px;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background-color: #ffffff;
-    left: 13px;
-    bottom: 5px;
+  & svg {
+    width: 30px;
+    height: 20px;
+    fill: $white-color;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+    &:hover {
+      fill: $yellow-color;
+    }
   }
 }

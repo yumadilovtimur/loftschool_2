@@ -1,0 +1,31 @@
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+// Использование:
+// .bg {
+//   @include retina {
+//     background-image: url("bg-2000px.png");
+//   }
+// }
+
+@mixin tablets {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+// Использование:
+// .class {
+//   @include tablets {
+//     width: 20%;
+//   }
+// }

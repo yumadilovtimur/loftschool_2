@@ -3,6 +3,7 @@
 
 /* variables, mixins */
 @import "../scss/utils/variables.scss";
+@import "../scss/utils/mixins.scss";
 
 /* layout setups */
 @import "../scss/base/base.scss";
@@ -11,5 +12,9 @@
 /* sections */
 @import "../scss/sections/intro.scss";
 @import "../scss/sections/features.scss";
+@import "../scss/sections/products.scss";
+@import "../scss/sections/team.scss";
+@import "../scss/sections/menu.scss";
 @import "../scss/sections/reviews.scss";
 @import "../scss/sections/buy.scss";
+@import "../scss/sections/footer.scss";

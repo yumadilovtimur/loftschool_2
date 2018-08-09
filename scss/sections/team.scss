@@ -1,0 +1,153 @@
+.team {
+  background-image: url("/images/team-bg.jpg")
+}
+
+.team__content {
+  background-color: rgba(47, 50, 52, 0.9);
+  width: 50%;
+  min-height: 100vh;
+  margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablets {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.team__content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    align-items: center;
+  }
+}
+
+.team__title {
+  color: #f9b43b;
+  font-family: "Gagalin", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    align-items: center;
+  }
+}
+
+.team__item {
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team__name {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    bottom: -11px;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid #f9b43b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin-right: 10px;
+  }
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.team__name--active {
+  color: #f9b43b;
+  &::before {
+    bottom: 8px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid #f9b43b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+  &+.team__people-decription {
+    height: auto;
+  }
+}
+
+.team__people-decription {
+  height: 0;
+  overflow: hidden;
+  margin-top: 15px;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__avatar {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @include tablets {
+    margin-bottom: 15px; 
+  }
+}
+
+.team__info {
+  display: inline-block;
+  max-width: 210px;
+  vertical-align: top;
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.team__member-post {
+  display: block;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team__member-function {
+  display: block;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 300;
+}

@@ -2,18 +2,6 @@
   background-image: url("/images/features-bg.png");
 }
 
-.features-container {
-  max-width: 940px;
-  padding: 0 80px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .features__title {
   color: $black-color;
   font-family: "Gagalin", sans-serif;
@@ -33,6 +21,12 @@
   justify-content: space-between;
   text-align: center;
   align-items: flex-start;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
 }
 
 .features__list-item {
@@ -49,18 +43,39 @@
     background-image: url("/images/icons/meat.svg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @include phones {
+      background-position: left top;
+    }
   }
 
   &:nth-child(2) {
     background-image: url("/images/icons/hand.svg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @include phones {
+      background-position: left top;
+    }
   }
 
   &:nth-child(3) {
     background-image: url("/images/icons/natural.svg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @include phones {
+      background-position: left top;
+      margin-bottom: 0;
+    }
+  }
+
+  @include phones {
+    margin-right: 0;
+    flex-basis: auto;
+    padding-top: 0;
+    padding-left: 120px;
+    margin-bottom: 40px;
   }
 }
 

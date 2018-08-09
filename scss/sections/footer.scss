@@ -1,0 +1,106 @@
+.footer {
+  background-image: url("/images/bg-map.jpg");
+  position: relative;
+}
+
+.footer__main-footer {
+  background-color: #121212;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container--footer {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.footer__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0;
+  }
+}
+
+.footer__contacts {
+  flex-basis: 30%;
+
+  @include tablets {
+    flex-basis: 50%;
+  }
+
+  @include phones {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.footer__address {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.footer__phone {
+  color: #e45028;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  padding-left: 20px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background-image: url("/images/icons/phone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+position: absolute;
+left: 0;
+top: 3px;
+  }
+}
+
+.footer__social {
+  flex-basis: 30%;
+  text-align: right;
+}
+
+.footer__social-link {
+  font-size: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  &:hover .footer__social-icon {
+    opacity: 1;
+  }
+  &:first-child .footer__social-icon {
+    width: 23px;
+    height: 13px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  transition-property: all;
+  transition-duration: 0.5s;
+}

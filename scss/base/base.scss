@@ -21,6 +21,14 @@ body {
   width: 100%;
   min-width: 1100px;
   margin: 0 auto;
+
+  @include tablets {
+    min-width: 768px;
+  }
+
+  @include phones {
+    min-width: 480px;
+  }
 }
 
 .section {
@@ -30,6 +38,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 940px;
+  padding: 0 80px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablets {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @include phones {
+    width: 440px;
+    padding: 0 20px;
+  }
+}
+
+.logo {
+  width: 92px;
+  height: 69px;
 }
 
 .buy-button {
@@ -103,3 +138,4 @@ body {
 .anchor-pagintaion__link:hover::after {
   opacity: 1;
 }
+

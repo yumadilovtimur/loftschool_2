@@ -28,7 +28,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
+  @include tablets {
+    flex-basis: 50%;
+    height: 25vh;
+  }
   &::after {
     content: "";
     display: block;
@@ -45,35 +48,27 @@
   &:hover::after {
     opacity: 1;
   }
-
   &:nth-child(1) {
     background-image: url("/images/authors/author-1.png");
   }
-
   &:nth-child(2) {
     background-image: url("/images/authors/author-2.png");
   }
-
   &:nth-child(3) {
     background-image: url("/images/authors/author-3.png");
   }
-
   &:nth-child(4) {
     background-image: url("/images/authors/author-4.png");
   }
-
   &:nth-child(5) {
     background-image: url("/images/authors/author-5.png");
   }
-
   &:nth-child(6) {
     background-image: url("/images/authors/author-6.png");
   }
-
   &:nth-child(7) {
     background-image: url("/images/authors/author-7.png");
   }
-
   &:nth-child(8) {
     background-image: url("/images/authors/author-8.png");
   }
@@ -94,6 +89,10 @@
   transform: translateX(-50%) translateY(-50%);
   transition-property: all;
   transition-duration: 0.3s;
+
+  @include phones {
+    text-align: center;
+  }
 }
 
 .reviews__item:hover>.reviews__preview {
@@ -105,7 +104,11 @@
   font-family: "Gagalin", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.2;
+
+  @include phones {
+    font-size: 24px;
+  }
 }
 
 .reviews__info {
@@ -114,12 +117,19 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .buy-button--more {
   background-color: #2f3234;
-
   &:hover {
     background-color: #1f2122;
+  }
+
+  @include phones {
+    margin-top: 25px;
   }
 }

@@ -25,9 +25,11 @@
   <div class="wrapper">
 
     <section class="section  intro" id="intro">
-      <div class="intro-container">
+      <div class="container  container--intro">
         <header class="header">
-          <img class="logo  logo--intro" src="/images/icons/logo.svg" alt="Логотип компании MyBurger">
+          <svg class="logo  logo--intro">
+            <use xlink:href="./images/sprite.svg#logo" />
+          </svg>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
@@ -63,12 +65,16 @@
             </h1>
           </figcaption>
         </figure>
-        <a class="intro__control-down" href="#features"></a>
+        <a class="intro__control-down" href="#features">
+          <svg>
+            <use xlink:href="./images/sprite.svg#arrow-down" />
+          </svg>
+        </a>
       </div>
     </section>
 
     <section class="section  features" id="features">
-      <div class="features-container">
+      <div class="container">
         <h2 class="features__title">Мы лучшие</h2>
         <ul class="features__list">
           <li class="features__list-item">
@@ -81,8 +87,230 @@
               сюжетный реформаторский пафос.</p>
           </li>
           <li class="features__list-item">
-            <b class="features__description">Натуральные игридиенты</b>
+            <b class="features__description">Натуральные ингредиенты</b>
             <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section  products" id="burgers">
+      <div class="container  container--products-section">
+        <div class="products__image-container">
+          <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
+        </div>
+        <div class="products__description">
+          <b class="products__name">Dark beef burger</b>
+          <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+            двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+          <div class="products__buy">
+            <span class="products__price">500</span>
+            <span class="products__price--small">рублей</span>
+            <a class="buy-button" href="#buy">Заказать</a>
+          </div>
+        </div>
+        <div class="products__controls">
+          <button class="products__control  products__control--left" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#arrow-down" />
+            </svg>
+          </button>
+          <button class="products__control  products__control--right" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#arrow-down" />
+            </svg>
+          </button>
+        </div>
+        <div class="products__ingridients">
+          <div class="products__ingridients-button">
+            <span class="products__ingridients-title">Состав</span>
+          </div>
+          <ul class="products__ingridients-list">
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#beef" />
+              </svg>
+              <span class="products__ingridient-name">Говядина</span>
+              <span class="products__ingridient-size">300 г</span>
+            </li>
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#buns" />
+              </svg>
+              <span class="products__ingridient-name">Булочки</span>
+              <span class="products__ingridient-size">100 г</span>
+            </li>
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#salad" />
+              </svg>
+              <span class="products__ingridient-name">Зелень</span>
+              <span class="products__ingridient-size">70 г</span>
+            </li>
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#sauce" />
+              </svg>
+              <span class="products__ingridient-name">Соус</span>
+              <span class="products__ingridient-size">150 г</span>
+            </li>
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#cucumber" />
+              </svg>
+              <span class="products__ingridient-name">Овощи</span>
+              <span class="products__ingridient-size">200 г</span>
+            </li>
+            <li class="products__ingridient-item  products__ingridient-item--beef">
+              <svg class="products__ingridient-image">
+                <use xlink:href="./images/sprite.svg#cheese" />
+              </svg>
+              <span class="products__ingridient-name">Сыр</span>
+              <span class="products__ingridient-size">80 г</span>
+            </li>
+          </ul>
+        </div>
+        <div class="products__kkal">
+          <span class="products__kkal-number">1200</span>
+          <span class="products__kkal-text">Ккал</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section  team" id="team">
+      <div class="team__content">
+        <div class="team__content-wrapper">
+          <h2 class="team__title">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__name  team__name--active">
+                Дэниэл Редклиф
+              </div>
+              <div class="team__people-decription">
+                <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
+                <div class="team__info">
+                  <div class="team__member-post">Оператор</div>
+                  <div class="team__member-function">
+                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__name">
+                Ричард Джеймс
+              </div>
+              <div class="team__people-decription">
+                <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
+                <div class="team__info">
+                  <div class="team__member-post">Оператор</div>
+                  <div class="team__member-function">
+                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__name">
+                Джейк Финн
+              </div>
+              <div class="team__people-decription">
+                <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
+                <div class="team__info">
+                  <div class="team__member-post">Оператор</div>
+                  <div class="team__member-function">
+                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__name">
+                Николай Иванов
+              </div>
+              <div class="team__people-decription">
+                <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
+                <div class="team__info">
+                  <div class="team__member-post">Оператор</div>
+                  <div class="team__member-function">
+                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section  menu" id="menu">
+      <div class="container  container--for-menu">
+        <h2 class="menu__title">Меню</h2>
+      </div>
+      <div class="menu__content">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__cover  menu__cover--meat">
+              <span class="menu__type-title">
+                Для мясоедов
+              </span>
+            </div>
+            <div class="menu__description">
+              <div class="menu__text">
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                  однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно
+                  выбирает метр.
+                </p>
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__cover  menu__cover--active  menu__cover--vegan">
+              <span class="menu__type-title">
+                Вегетарианское
+              </span>
+            </div>
+            <div class="menu__description">
+              <div class="menu__text">
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                  однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно
+                  выбирает метр.
+                </p>
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__cover  menu__cover--diet">
+              <span class="menu__type-title">
+                Диетическое
+              </span>
+            </div>
+            <div class="menu__description">
+              <div class="menu__text">
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                  однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно
+                  выбирает метр.
+                </p>
+                <p class="menu__paragraph">
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                  Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -160,7 +388,7 @@
     </section>
 
     <section class="section  buy" id="buy">
-      <div class="buy-container">
+      <div class="container">
         <h2 class="buy__title">Закажите доставку</h2>
         <form class="buy__forms" action="https://example.com" method="POST">
           <div class="buy__left-forms">
@@ -247,6 +475,35 @@
         </div>
     </section>
 
+    <section class="section  footer" id="contacts">
+      <footer class="footer__main-footer">
+        <div class="container  container--footer">
+          <div class="footer__flex-wrapper">
+            <div class="footer__contacts">
+              <address class="footer__address">
+                Санкт-Петербург, ул. Бабушкина, д.12/1, 15
+              </address>
+              <a class="footer__phone" href="tel:+7-812-377-13-77">+7 (812) 377-13-77</a>
+            </div>
+            <div class="footer__social">
+              <a class="footer__social-link" href="#features">
+                <img class="footer__social-icon" src="/images/icons/vk.svg" alt="Иконка социальной сети вконтакте">
+              </a>
+              <a class="footer__social-link" href="#features">
+                <img class="footer__social-icon" src="/images/icons/fb.svg" alt="Иконка социальной сети facebook">
+              </a>
+              <a class="footer__social-link" href="#features">
+                <img class="footer__social-icon" src="/images/icons/inst.svg" alt="Иконка социальной сети instagram">
+              </a>
+              <a class="footer__social-link" href="#features">
+                <img class="footer__social-icon" src="/images/icons/twitter.svg" alt="Иконка социальной сети twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
     <nav class="anchor-pagintaion">
       <ul class="anchor-pagintaion__list">
         <li class="anchor-pagintaion__list-item">
@@ -279,7 +536,7 @@
       </ul>
     </nav>
 
-    </div>
+  </div>
 
 </body>
 

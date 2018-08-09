@@ -2,30 +2,31 @@
   background-image: url("/images/buy-bg.jpg");
 }
 
-.buy-container {
-  max-width: 940px;
-  padding: 0 80px;
-  margin: 0 auto;
-  min-height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .buy__title {
   color: #f9b43b;
   font-family: "Gagalin", sans-serif;
   font-size: 72px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0;
   margin-bottom: 40px;
+  text-align: center;
+  @include phones {
+    font-size: 50px;
+  }
 }
 
 .buy__forms {
   display: flex;
   justify-content: space-between;
+  @include tablets {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 58.5%;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
 .buy__left-forms {
@@ -37,6 +38,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   height: 205px;
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .buy__right-forms {
@@ -85,6 +90,16 @@
   height: 110px;
 }
 
+.buy__left-forms .buy__form-line:nth-child(1) {
+  .buy__form-element {
+    flex-basis: 50%;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .buy__left-forms .buy__form-line:nth-child(2) {
   .buy__form-element {
     flex-basis: 100%;
@@ -95,15 +110,54 @@
   .buy__form-element {
     flex-basis: 25%;
     margin-right: 20px;
+    @include phones {
+      flex-basis: 33%;
+    }
     &:last-child {
       margin-right: 0;
+    }
+    &:nth-child(4) {
+      @include phones {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      @include phones {
+        margin-right: 0;
+      }
     }
   }
 }
 
-.buy__right-forms .buy__form-line:nth-child(1) {
-  .buy__form-element {
-    flex-basis: 100%;
+.buy__right-forms {
+  & .buy__form-line:nth-child(1) {
+    .buy__form-element {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.buy__right-forms .buy__form-line:nth-child(2) .buy__form-element {
+  @include phones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.buy__right-forms .buy__form-line:nth-child(3) .buy__form-element {
+  @include phones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.buy__right-forms .buy__form-line:nth-child(4) .buy__form-element {
+  @include phones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

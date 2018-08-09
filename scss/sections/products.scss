@@ -1,0 +1,246 @@
+.products {
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 50%, #f9b43b 75%, #f9b43b 100%);
+}
+
+.container--products-section {
+  flex-direction: row;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.products__image-container {
+  width: 60%;
+  height: auto;
+  margin-right: 25px;
+
+  @include tablets {
+    margin-right: 0;
+    width: 75%;
+  }
+}
+
+.products__image {
+
+  @include tablets {
+  width: 100%;
+  }
+}
+
+.products__description {
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    align-items: center;
+    text-align: center;
+    width: 75%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.products__name {
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 45px;
+}
+
+.products__info {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.products__buy {
+  display: flex;
+  align-items: flex-end;
+}
+
+.products__price {
+  color: #e35028;
+  font-family: "Gagalin", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 72px;
+  letter-spacing: -2px;
+}
+
+.products__price--small {
+  color: #e35028;
+  font-family: "Gagalin", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 30px;
+  margin-left: 10px;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.products__control {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+top: 0;
+bottom: 0;
+
+  svg {
+    width: 27px;
+    height: 13px;
+    fill: #ffffff;
+  }
+  &--left {
+    left: 40px;
+    transform: rotate(90deg);
+
+    @include phones {
+      left: 10px;
+    }
+  }
+  &--right {
+    right: 40px;
+    transform: rotate(-90deg);
+
+    @include phones {
+      right: 10px;
+    }
+  }
+}
+
+.products__ingridients-button {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 90px;
+  height: 90px;
+  background-color: #f08c33;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  &:hover {
+    background-color: #e35028;
+    &+.products__ingridients-list {
+      opacity: 1;
+    }
+  }
+
+  @include tablets {
+    left: 30px;
+  }
+}
+
+.products__ingridients-title {
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding-top: 55px;
+  background-image: url("/images/icons/burger.svg");
+  background-size: 46px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.products__ingridients-list {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.6s;
+  width: 230px;
+  height: 290px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 170px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablets {
+    left: 120px;
+  }
+}
+
+.products__ingridient-item {
+  list-style: none;
+  color: #2f3234;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.products__ingridient-image {
+  display: inline-block;
+  width: 42px;
+  height: 37px;
+  margin-right: 20px;
+}
+
+.products__ingridient-size {
+  margin-left: auto;
+  font-weight: 300;
+}
+
+.products__kkal {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 60px;
+  height: 75px;
+  background-image: url("/images/icons/kkal.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include tablets {
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 30px;
+  }
+}
+
+.products__kkal-number {
+color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.products__kkal-text {
+color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1px;
+  margin-top: 25px;
+}
