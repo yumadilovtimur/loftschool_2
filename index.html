@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="keywords" content="Ресторан, доставка, бургеры, кафе, фастфуд, стритфуд">
   <meta name="description" content="MyBurger — это сеть бургер-баров с авторскими бургерами по демократичным ценам. В меню — гурмэ-бургеры с котлетами из премиальной говядины Black Angus, авторскими соусами и необычными ингредиентами.">
-  <title>MyBurger — сеть бургер-баров</title>
+  <title>MrBurger — сеть бургер-баров</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -24,12 +24,41 @@
 
   <div class="wrapper">
 
+    <section class="section  hambmenu">
+      <div class="container  container--hambmenu">
+        <header class="hambmenu__header">
+            <img class="logo" src="/images/icons/logo.svg" alt="Логотип компании Mister Burger">
+            <button class="hambmenu__close-btn"></button>
+        </header>
+        <nav class="hambmenu__nav">
+            <ul class="hambmenu__list">
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#features">О нас</a>
+              </li>
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#burgers">Бургеры</a>
+              </li>
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#team">Команда</a>
+              </li>
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#menu">Меню</a>
+              </li>
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="hambmenu__list-item">
+                <a class="hambmenu__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </section>
+
     <section class="section  intro" id="intro">
       <div class="container  container--intro">
         <header class="header">
-          <svg class="logo  logo--intro">
-            <use xlink:href="./images/sprite.svg#logo" />
-          </svg>
+          <img class="logo  logo--intro" src="/images/icons/logo.svg" alt="Логотип компании Mister Burger">
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
@@ -56,6 +85,9 @@
             </ul>
           </nav>
           <a class="buy-button" href="#buy">Заказать</a>
+          <button class="header__hambmenu-btn">
+            <div class="header__hambmenu-btn-lines"></div>
+          </button>
         </header>
         <figure class="intro__visual">
           <img class="intro__picture" src="/images/visual_capture.png" alt="Бургер из меню ресторана MyBurger">
@@ -78,16 +110,16 @@
         <h2 class="features__title">Мы лучшие</h2>
         <ul class="features__list">
           <li class="features__list-item">
-            <b class="features__description">100% свежее мясо</b>
+            <h3 class="features__description">100% свежее мясо</h3>
             <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
           </li>
           <li class="features__list-item">
-            <b class="features__description">Ручная сборка</b>
+            <h3 class="features__description">Ручная сборка</h3>
             <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает
               сюжетный реформаторский пафос.</p>
           </li>
           <li class="features__list-item">
-            <b class="features__description">Натуральные ингредиенты</b>
+            <h3 class="features__description">Натуральные ингредиенты</h3>
             <p class="features__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
           </li>
         </ul>
@@ -100,7 +132,7 @@
           <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
         </div>
         <div class="products__description">
-          <b class="products__name">Dark beef burger</b>
+          <h3 class="products__name">Dark beef burger</h3>
           <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
             двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
           <div class="products__buy">
@@ -122,9 +154,9 @@
           </button>
         </div>
         <div class="products__ingridients">
-          <div class="products__ingridients-button">
+          <button class="products__ingridients-button" type="button">
             <span class="products__ingridients-title">Состав</span>
-          </div>
+          </button>
           <ul class="products__ingridients-list">
             <li class="products__ingridient-item  products__ingridient-item--beef">
               <svg class="products__ingridient-image">
@@ -183,9 +215,9 @@
           <h2 class="team__title">Команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <div class="team__name  team__name--active">
+              <button class="team__name  team__name--active">
                 Дэниэл Редклиф
-              </div>
+              </button>
               <div class="team__people-decription">
                 <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
                 <div class="team__info">
@@ -197,9 +229,9 @@
               </div>
             </li>
             <li class="team__item">
-              <div class="team__name">
+              <button class="team__name">
                 Ричард Джеймс
-              </div>
+              </button>
               <div class="team__people-decription">
                 <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
                 <div class="team__info">
@@ -211,9 +243,9 @@
               </div>
             </li>
             <li class="team__item">
-              <div class="team__name">
+              <button class="team__name">
                 Джейк Финн
-              </div>
+              </button>
               <div class="team__people-decription">
                 <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
                 <div class="team__info">
@@ -225,9 +257,9 @@
               </div>
             </li>
             <li class="team__item">
-              <div class="team__name">
+              <button class="team__name">
                 Николай Иванов
-              </div>
+              </button>
               <div class="team__people-decription">
                 <img class="team__avatar" src="/images/avatar.png" alt="Фотография сотрудника">
                 <div class="team__info">
@@ -250,11 +282,11 @@
       <div class="menu__content">
         <ul class="menu__list">
           <li class="menu__item">
-            <div class="menu__cover  menu__cover--meat">
+            <button class="menu__cover  menu__cover--meat">
               <span class="menu__type-title">
                 Для мясоедов
               </span>
-            </div>
+            </button>
             <div class="menu__description">
               <div class="menu__text">
                 <p class="menu__paragraph">
@@ -271,11 +303,11 @@
             </div>
           </li>
           <li class="menu__item">
-            <div class="menu__cover  menu__cover--active  menu__cover--vegan">
+            <button class="menu__cover  menu__cover--active  menu__cover--vegan">
               <span class="menu__type-title">
                 Вегетарианское
               </span>
-            </div>
+            </button>
             <div class="menu__description">
               <div class="menu__text">
                 <p class="menu__paragraph">
@@ -292,11 +324,11 @@
             </div>
           </li>
           <li class="menu__item">
-            <div class="menu__cover  menu__cover--diet">
+            <button class="menu__cover  menu__cover--diet">
               <span class="menu__type-title">
                 Диетическое
               </span>
-            </div>
+            </button>
             <div class="menu__description">
               <div class="menu__text">
                 <p class="menu__paragraph">
@@ -320,67 +352,75 @@
       <div class="reviews-container">
         <ul class="reviews__list">
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-1.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-2.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-3.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-4.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-5.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-6.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-7.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
           <li class="reviews__item">
+            <img class="reviews__avatar" src="/images/authors/author-8.png">
             <div class="reviews__preview">
-              <b class="reviews__autor-name">Константин Спилберг</b>
+              <h3 class="reviews__autor-name">Константин Спилберг</h3>
               <p class="reviews__info">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                 могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="buy-button  buy-button--more">Подробнее</button>
+              <button type="button" class="buy-button  buy-button--more">Подробнее</button>
             </div>
           </li>
         </ul>
@@ -536,7 +576,9 @@
       </ul>
     </nav>
 
-  </div>
+    </div>
+
+    <script src="/main.js" async></script>
 
 </body>
 

@@ -34,15 +34,16 @@ body {
 .section {
   background-position: top center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 940px;
-  padding: 0 80px;
+  max-width: 940px;
+  padding: 0 8%;
   margin: 0 auto;
   position: relative;
   min-height: 650px;
@@ -52,13 +53,13 @@ body {
   align-items: center;
 
   @include tablets {
-    width: 708px;
-    padding: 0 30px;
+    max-width: 708px;
+    padding: 0 4%;
   }
 
   @include phones {
-    width: 440px;
-    padding: 0 20px;
+    max-width: 440px;
+    padding: 0 4.5%;
   }
 }
 

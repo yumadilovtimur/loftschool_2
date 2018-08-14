@@ -96,7 +96,7 @@
 top: 0;
 bottom: 0;
 
-  svg {
+  & svg {
     width: 27px;
     height: 13px;
     fill: #ffffff;
@@ -129,7 +129,16 @@ bottom: 0;
   border-radius: 5px;
   transition-property: all;
   transition-duration: 0.5s;
-  &:hover {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+
+  &:hover,
+  &:active {
     background-color: #e35028;
     &+.products__ingridients-list {
       opacity: 1;

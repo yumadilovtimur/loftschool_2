@@ -34,7 +34,6 @@
   margin: 0;
   font-size: 0;
   text-align: right;
-
   @include tablets {
     display: none;
   }
@@ -74,19 +73,49 @@
 .intro__visual {
   display: flex;
   margin: 0;
-
   @include tablets {
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 75%;
   }
+}
+
+.header__hambmenu-btn {
+  width: 24px;
+  height: 22px;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  border: none;
+  position: relative;
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
+
+.header__hambmenu-btn-lines {
+  width: 24px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 9px 0 0 #ffffff, 0 18px 0 0 #ffffff;
 }
 
 .intro__picture {
   width: 451px;
   height: 424px;
   margin-right: 10px;
-
   @include tablets {
     margin-right: 0;
     margin-bottom: 20px;
@@ -101,7 +130,6 @@
   line-height: 85px;
   margin: 0;
   margin-top: 130px;
-
   @include tablets {
     text-align: center;
     margin-top: 0;
@@ -124,16 +152,14 @@
   height: 20px;
   position: relative;
   margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 30px;
-
+  margin-top: 25px;
+  margin-bottom: 25px;
   & svg {
     width: 30px;
     height: 20px;
     fill: $white-color;
     transition-property: all;
     transition-duration: 0.5s;
-
     &:hover {
       fill: $yellow-color;
     }

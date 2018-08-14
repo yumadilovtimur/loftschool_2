@@ -61,6 +61,15 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
 
   &--meat {
     background-image: url("/images/for-meat-bg.jpg");
@@ -80,6 +89,10 @@
 
     @include tablets {
       width: 500px;
+    }
+
+    @include tablets {
+      width: 400px;
     }
   }
 }
