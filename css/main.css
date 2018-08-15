@@ -819,7 +819,10 @@ body {
       align-items: center; } }
 
 .team__name--active + .team__people-decription {
-  height: auto; }
+  height: 123px; }
+  @media (max-width: 768px) {
+    .team__name--active + .team__people-decription {
+      height: 237px; } }
 
 .team__avatar {
   display: inline-block;
@@ -921,7 +924,9 @@ body {
   font-family: "Gagalin", sans-serif;
   font-size: 40px;
   font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  transition-property: all;
+  transition-duration: 0.5s; }
   .menu__cover--meat {
     background-image: url("/images/for-meat-bg.jpg"); }
   .menu__cover--vegan {
@@ -932,13 +937,13 @@ body {
 .menu__cover--active {
   color: #f9b43b; }
   .menu__cover--active + .menu__description {
-    width: 550px; }
+    width: 600px; }
     @media (max-width: 768px) {
       .menu__cover--active + .menu__description {
-        width: 500px; } }
-    @media (max-width: 768px) {
+        width: 530px; } }
+    @media (max-width: 480px) {
       .menu__cover--active + .menu__description {
-        width: 400px; } }
+        width: 240px; } }
 
 .menu__type-title {
   text-align: center;
@@ -956,7 +961,9 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.7;
-  height: 100vh; }
+  height: 100vh;
+  transition-property: all;
+  transition-duration: 0.5s; }
 
 .menu__text {
   padding: 60px 35px; }
@@ -991,7 +998,8 @@ body {
   @media (max-width: 768px) {
     .reviews__item {
       flex-basis: 50%;
-      height: 25vh; } }
+      height: 25vh;
+      text-align: center; } }
   .reviews__item::after {
     content: "";
     display: block;
@@ -1345,3 +1353,80 @@ body {
   opacity: 0.3;
   transition-property: all;
   transition-duration: 0.5s; }
+
+.review-popup {
+  background-color: rgba(47, 50, 52, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  transition-property: all;
+  transition-duration: 0.6s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.6s; }
+
+.review-popup__container {
+  padding: 30px 20px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 420px;
+  height: auto; }
+
+.review-popup__name {
+  margin: 0;
+  font-family: "Gagalin", sans-serif;
+  font-size: 14px;
+  color: #2f3234;
+  line-height: 1.2;
+  margin-bottom: 25px; }
+
+.review-popup__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #2f3234;
+  line-height: 1.7; }
+
+.review-popup__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  color: #ec8468; }
+  .review-popup__close-btn::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #ec8468;
+    width: 23px;
+    height: 3px;
+    border-radius: 10px;
+    transform: rotate(45deg); }
+  .review-popup__close-btn::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #ec8468;
+    width: 23px;
+    height: 3px;
+    border-radius: 10px;
+    transform: rotate(-45deg); }

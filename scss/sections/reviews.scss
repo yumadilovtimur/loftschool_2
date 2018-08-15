@@ -29,6 +29,7 @@
   @include tablets {
     flex-basis: 50%;
     height: 25vh;
+    text-align: center;
   }
 
   &::after {

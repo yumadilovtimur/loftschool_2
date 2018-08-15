@@ -70,6 +70,8 @@
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
+  transition-property: all;
+  transition-duration: 0.5s;
 
   &--meat {
     background-image: url("/images/for-meat-bg.jpg");
@@ -85,14 +87,14 @@
 .menu__cover--active {
   color: #f9b43b;
   & + .menu__description {
-    width: 550px;
+    width: 600px;
 
     @include tablets {
-      width: 500px;
+      width: 530px;
     }
 
-    @include tablets {
-      width: 400px;
+    @include phones {
+      width: 240px;
     }
   }
 }
@@ -115,6 +117,8 @@
   font-weight: 300;
   line-height: 1.7;
   height: 100vh;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .menu__text {

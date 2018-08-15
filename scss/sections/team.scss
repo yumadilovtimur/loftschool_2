@@ -116,7 +116,11 @@
 }
 
 .team__name--active + .team__people-decription {
-  height: auto;
+  height: 123px;
+
+  @include tablets {
+    height: 237px;
+  }
 }
 
 .team__avatar {
