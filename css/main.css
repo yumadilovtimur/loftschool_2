@@ -1266,12 +1266,17 @@ body {
   border: none; }
 
 .footer {
-  background-image: url("/images/bg-map.jpg");
-  position: relative; }
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.footer__map {
+  height: 100%;
+  width: 100%; }
 
 .footer__main-footer {
   background-color: #121212;
-  position: absolute;
   bottom: 0;
   width: 100%; }
 

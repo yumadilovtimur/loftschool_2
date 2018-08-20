@@ -110,6 +110,8 @@ function accordeonMenu() {
 accordeonMenu();
 
 // Popup в секции "Отзывы"
+function popup {
+
 const reviewBtn = document.querySelectorAll(".buy-button--more");
 
 for (let i = 0; i < reviewBtn.length; i++) {
@@ -161,4 +163,18 @@ function openPopup(content, title) {
   reviewContainer.appendChild(closePopup);
 
   return reviewPopup;
+}
+
+}
+
+popup();
+
+
+// Яндекс.Карты
+ymaps.ready(init);
+function init() {
+  var map = new ymaps.Map("map", {
+    center: [59.943, 30.322],
+    zoom: 11
+});
 }
