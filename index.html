@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link href="/css/main.css" rel="stylesheet">
-  
+
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -131,19 +131,68 @@
 
     <section class="section  products" id="burgers">
       <div class="container  container--products-section">
-        <div class="products__image-container">
-          <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
-        </div>
-        <div class="products__description">
-          <h3 class="products__name">Dark beef burger</h3>
-          <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
-            двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
-          <div class="products__buy">
-            <span class="products__price">500</span>
-            <span class="products__price--small">рублей</span>
-            <a class="buy-button" href="#buy">Заказать</a>
-          </div>
-        </div>
+        <ul class="products__slider">
+          <li class="products__slider-item">
+              <div class="products__image-container">
+                  <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
+                </div>
+                <div class="products__description">
+                  <h3 class="products__name">Dark beef burger</h3>
+                  <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  <div class="products__buy">
+                    <span class="products__price">500</span>
+                    <span class="products__price--small">рублей</span>
+                    <a class="buy-button" href="#buy">Заказать</a>
+                  </div>
+                </div>
+          </li>
+          <li class="products__slider-item">
+              <div class="products__image-container">
+                  <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
+                </div>
+                <div class="products__description">
+                  <h3 class="products__name">Dark beef burger</h3>
+                  <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  <div class="products__buy">
+                    <span class="products__price">500</span>
+                    <span class="products__price--small">рублей</span>
+                    <a class="buy-button" href="#buy">Заказать</a>
+                  </div>
+                </div>
+          </li>
+          <li class="products__slider-item">
+              <div class="products__image-container">
+                  <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
+                </div>
+                <div class="products__description">
+                  <h3 class="products__name">Dark beef burger</h3>
+                  <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  <div class="products__buy">
+                    <span class="products__price">500</span>
+                    <span class="products__price--small">рублей</span>
+                    <a class="buy-button" href="#buy">Заказать</a>
+                  </div>
+                </div>
+          </li>
+          <li class="products__slider-item">
+              <div class="products__image-container">
+                  <img class="products__image" src="./images/burgers-slider/Spicy_Shrimp_Burger.png" alt="Фотография бургера">
+                </div>
+                <div class="products__description">
+                  <h3 class="products__name">Dark beef burger</h3>
+                  <p class="products__info">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  <div class="products__buy">
+                    <span class="products__price">500</span>
+                    <span class="products__price--small">рублей</span>
+                    <a class="buy-button" href="#buy">Заказать</a>
+                  </div>
+                </div>
+          </li>
+        </ul>
         <div class="products__controls">
           <button class="products__control  products__control--left" href="#">
             <svg>
@@ -432,20 +481,18 @@
     <section class="section  buy" id="buy">
       <div class="container">
         <h2 class="buy__title">Закажите доставку</h2>
-        <form class="buy__forms" action="https://example.com" method="POST">
+        <form class="buy__forms" method="POST">
           <div class="buy__left-forms">
             <div class="buy__form-line">
               <div class="buy__form-element">
-                <label class="buy__label" for="name">
-                  Имя
-                </label>
+                <label class="buy__label" for="name">Имя</label>
                 <input id="name" class="buy__input" type="text" name="name" required>
+                <div class="buy__validate-message"></div>
               </div>
               <div class="buy__form-element">
-                <label class="buy__label" for="telephone">
-                  Телефон
-                </label>
+                <label class="buy__label" for="telephone">Телефон</label>
                 <input class="buy__input" id="telephone" type="tel" name="telephone" required>
+                <div class="buy__validate-message"></div>
               </div>
             </div>
             <div class="buy__form-line">
@@ -453,7 +500,7 @@
                 <label class="buy__label" for="street">
                   Улица
                 </label>
-                <input class="buy__input" id="street" type="text" name="street" required>
+                <input class="buy__input" id="street" type="text" name="street">
               </div>
             </div>
             <div class="buy__form-line">
@@ -461,7 +508,7 @@
                 <label class="buy__label" for="building">
                   Дом
                 </label>
-                <input class="buy__input" id="building" type="number" name="building" required>
+                <input class="buy__input" id="building" type="number" name="building">
               </div>
               <div class="buy__form-element">
                 <label class="buy__label" for="housing">
@@ -473,13 +520,13 @@
                 <label class="buy__label" for="apartament">
                   Квартира
                 </label>
-                <input class="buy__input" id="apartament" type="number" name="apartament" required>
+                <input class="buy__input" id="apartament" type="number" name="apartament">
               </div>
               <div class="buy__form-element">
                 <label class="buy__label" for="level">
                   Этаж
                 </label>
-                <input class="buy__input" id="level" type="number" name="level" required>
+                <input class="buy__input" id="level" type="number" name="level">
               </div>
             </div>
           </div>
@@ -487,9 +534,7 @@
           <div class="buy__right-forms">
             <div class="buy__form-line">
               <div class="buy__form-element">
-                <label class="buy__label" for="comment">
-                  Комментарий
-                </label>
+                <label class="buy__label" for="comment">Комментарий</label>
                 <textarea class="buy__input  buy__input--textarea" id="comment" name="comment"></textarea>
               </div>
             </div>
@@ -509,7 +554,7 @@
             </div>
             <div class="buy__form-line">
               <div class="buy__form-element">
-                <button class="buy-button  buy-button--margin-right" type="submit">Заказать</button>
+                <button class="buy-button  buy-button--margin-right" type="submit" id="submitbutton">Заказать</button>
                 <button class="buy__reset" type="reset">Очистить</button>
               </div>
             </div>
@@ -580,9 +625,6 @@
     </nav>
 
     </div>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-    </script>
 
     <script src="/main.js" async></script>
 

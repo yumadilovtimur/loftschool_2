@@ -4,10 +4,25 @@
 
 .container--products-section {
   flex-direction: row;
+  overflow: hidden;
 
   @include tablets {
     flex-direction: column;
   }
+}
+
+.products__slider {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.products__slider-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
 }
 
 .products__image-container {
