@@ -332,3 +332,25 @@ function openFormModal(content) {
 }
 }
 ajaxForm();
+
+// Slider in menu section
+function menuSlider() {
+
+const leftBtn = document.querySelector(".products__control--left");
+    const rightBtn = document.querySelector(".products__control--right");
+    const items = document.querySelector(".products__slider");
+    rightBtn.addEventListener("click", function () {
+      if (parseInt(getComputedStyle(items).right) != 300) {
+        items.style.right = parseInt(getComputedStyle(items).right) + 100 + "%";
+      }
+    });
+    leftBtn.addEventListener("click", function () {
+      if (parseInt(getComputedStyle(items).right) != 0) {
+        items.style.right = parseInt(getComputedStyle(items).right) - 100 + "%";
+      } 
+    });
+
+  }
+  menuSlider();
+
+

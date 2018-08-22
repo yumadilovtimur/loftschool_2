@@ -4,7 +4,6 @@
 
 .container--products-section {
   flex-direction: row;
-  overflow: hidden;
 
   @include tablets {
     flex-direction: column;
@@ -12,9 +11,18 @@
 }
 
 .products__slider {
+  position: relative;
   display: flex;
   justify-content: flex-start;
+  width: 792px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  right: 0;
   overflow: hidden;
+
+  @include tablets {
+    width: 328px;
+  }
 }
 
 .products__slider-item {
@@ -22,7 +30,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-basis: 100%;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .products__image-container {
@@ -108,8 +119,8 @@
   cursor: pointer;
   border: none;
   position: absolute;
-top: 0;
-bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   & svg {
     width: 27px;
@@ -117,19 +128,19 @@ bottom: 0;
     fill: #ffffff;
   }
   &--left {
-    left: 40px;
+    left: -40px;
     transform: rotate(90deg);
 
     @include phones {
-      left: 10px;
+      left: -10px;
     }
   }
   &--right {
-    right: 40px;
+    right: -40px;
     transform: rotate(-90deg);
 
     @include phones {
-      right: 10px;
+      right: -10px;
     }
   }
 }

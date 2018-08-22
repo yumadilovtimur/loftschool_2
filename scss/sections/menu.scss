@@ -52,7 +52,7 @@
 
 .menu__cover {
   width: 80px;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -101,10 +101,10 @@
 
 .menu__type-title {
   text-align: center;
-  width: 100vh;
   transform: rotate(-90deg);
   position: absolute;
   margin: auto;
+  width: 400px;
 }
 
 .menu__description {
@@ -116,7 +116,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.7;
-  height: 100vh;
+  height: 100%;
   transition-property: all;
   transition-duration: 0.5s;
 }
