@@ -1,5 +1,5 @@
 .features {
-  background-image: url("./images/features-bg.png");
+  background-image: url("../images/features-bg.png");
 }
 
 .features__title {
@@ -40,7 +40,7 @@
   }
 
   &:nth-child(1) {
-    background-image: url("./images/icons/meat.svg");
+    background-image: url("../images/icons/meat.svg");
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -50,7 +50,7 @@
   }
 
   &:nth-child(2) {
-    background-image: url("./images/icons/hand.svg");
+    background-image: url("../images/icons/hand.svg");
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -60,7 +60,7 @@
   }
 
   &:nth-child(3) {
-    background-image: url("./images/icons/natural.svg");
+    background-image: url("../images/icons/natural.svg");
     background-repeat: no-repeat;
     background-position: top center;
 

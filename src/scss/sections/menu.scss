@@ -1,5 +1,5 @@
 .menu {
-  background-image: url("./images/menu-bg.jpg");
+  background-image: url("../images/menu-bg.jpg");
   position: relative;
 }
 
@@ -74,13 +74,13 @@
   transition-duration: 0.5s;
 
   &--meat {
-    background-image: url("./images/for-meat-bg.jpg");
+    background-image: url("../images/for-meat-bg.jpg");
   }
   &--vegan {
-    background-image: url("./images/for-vegan-bg.jpg");
+    background-image: url("../images/for-vegan-bg.jpg");
   }
   &--diet {
-    background-image: url("./images/for-diet-bg.jpg");
+    background-image: url("../images/for-diet-bg.jpg");
   }
 }
 
